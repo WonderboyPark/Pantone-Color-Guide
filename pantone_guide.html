@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dixie Labels Pantone Guide</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="./bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+
+        	.cyan_box {background-color:#00FFFF; width: 80%; height: 100%; border-radius: 4px}
+        	.magenta_box {background-color:#ff00ff ; width: 80%; height: 100%; border-radius: 4px}
+        	.yellow_box {background-color:#FFFF00; width: 80%; height: 100%; border-radius: 4px}
+        	.black_box {background-color:#000000; width: 80%; height: 100%; border-radius: 4px}
+        	.orange_box {background-color:#FFA500; width: 80%; height: 100%; border-radius: 4px;}
+        	.green_box {background-color:#00FF00; width: 80%; height: 100%; border-radius: 4px;}
+        	.violet_box {background-color:#800080; width: 80%; height: 100%; border-radius: 4px;}
+        	.card-body {background-color: #ebebeb;}
+        	
+        </style>
+    </head>
+    <body>
+    	<script src="./jquery-3.5.1.js"></script>
+    	<script src="./pantone_data.js"></script>
+    	<script src="./data_search.js"></script>
+    	<script src="./abc.js"></script>
+
+        <nav class="navbar navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Dixie Labels Pantone Guide</a>
+			</div>
+		</nav>
+		<br>
+		<div class="container">
+			<h1 class="display-6">Enter the name of the Pantone color below and press Tab</h1>
+			<div class="input-group input-group-lg">
+			  <span class="input-group-text" id="inputGroup-sizing-lg">Pantone</span>
+			  <input id="pantoneSearch" type="" class="form-control">
+			</div>
+			<br>
+			<span id="pantoneTitle"></span>
+			<div class="row" id="stock_cards">
+			</div>
+			<div id="pantone_error" class="alert alert-danger" role="alert">
+			 Sorry, but that Pantone Color is not in our database.
+			</div>
+		</div>
+
+	
+    </body>
+</html>
